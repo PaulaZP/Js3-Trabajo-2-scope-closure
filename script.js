@@ -22,8 +22,11 @@
 */
 
 // Tu código aquí
-function botonClickeado() {
-  // console.log('Hiciste click en el botón' + ?);
+function botonClickeado(i) {
+  function boton(){
+    return console.log(`Hiciste click en el botón ${i}`);
+  }
+  return boton;
 }
 
 // BOILERPLATE
@@ -45,9 +48,15 @@ for (var i = 0; i < botones.length; i++) {
   
   Tarea: Escribe el cuerpo de la función incrementarFunc
 */
-
-// Tu código aquí
-function incrementarFunc( ) {}
+	
+function incrementarFunc() {
+  let num1 = 0;
+  function aumentar() {
+    let num2 = 1;
+      return num1 += num2;
+  }
+  return aumentar;
+}
 
 // BOILERPLATE
 const actualizar = incrementarFunc();
